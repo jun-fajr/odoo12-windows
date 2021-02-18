@@ -20,8 +20,8 @@ create a `postgres` user with a password using the `PgAdmin` GUI:<br />
  * expand `server` node to create a connection,
  * expand `PostgreSQL` node,
  * select **Object-> Create -> Login/Group Role**,
-    * enter the username in the `Role Name` field (e.g. odoo),
-    * open the `Definition` tab and enter the password (e.g. odoo),
+    * enter the username in the `Role Name` field (e.g. odoo12),
+    * open the `Definition` tab and enter the password (e.g. odoo12),
     * open the `Privileges` tab and give `login` and `create database` rights,
  * click `save`.
 
@@ -65,7 +65,7 @@ After `Visual C++ 2015 Build Tools` installation process completes, launch `Comm
 
 If you're having `Python 3.4` installed on system then you will require [`Microsoft Windows SDK for Windows 7 and .NET Framework 4`](https://www.microsoft.com/en-us/download/details.aspx?id=8279) instead of `Visual C++ 2015 Build Tools`. for more information visit [`WindowsCompilers`](https://wiki.python.org/moin/WindowsCompilers) article on `Python Wiki`.
 
-Install remaining `pure Python packages` from [`requirements.txt`](https://github.com/kasim1011/odoo-11.0-windows-installation/raw/master/requirements.txt) using
+Install remaining `pure Python packages` from [`requirements.txt`] using
  * `$ python3 -m  pip install -r requirements.txt`
  * `$ python3 -m pip install -U werkzeug`
 
@@ -74,9 +74,9 @@ Add wkhtmltopdf's `bin` directory (default: `C:\Program Files\wkhtmltopdf\bin`) 
 <br />
 Launch `Command Prompt`.<br />
 Switch to (`cd`) your desired `odoo` installation directory<br />
-clone `odoo` repository by `git clone https://github.com/odoo/odoo.git -b 11.0`<br />
+clone `odoo` repository by `git clone https://github.com/odoo/odoo.git -b 12.0`<br />
 
 Switch to `odoo` installation directory and run `odoo` using<br />
 `$ python3 odoo-bin -w odoo -r odoo --addons-path=addons --log-level=debug_rpc`<br />
 
-<img src="https://raw.githubusercontent.com/kasim1011/odoo-11.0-windows-installation/master/Screenshot.png" />
+<img src="https://user-images.githubusercontent.com/13750681/108304244-2c00ef00-71da-11eb-873b-4f3fe41f0cf3.png" />
