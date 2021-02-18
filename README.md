@@ -77,6 +77,6 @@ Switch to (`cd`) your desired `odoo` installation directory<br />
 clone `odoo` repository by `git clone https://github.com/odoo/odoo.git -b 12.0`<br />
 
 Switch to `odoo` installation directory and run `odoo` using<br />
-`$ python3 odoo-bin -w odoo -r odoo --addons-path=addons --log-level=debug_rpc`<br />
+`$ python3 odoo-bin --addons-path=addons,custom-addons -r odoo12 -w odoo12 --xmlrpc-port=8012`<br />
 
 <img src="https://user-images.githubusercontent.com/13750681/108304244-2c00ef00-71da-11eb-873b-4f3fe41f0cf3.png" />
